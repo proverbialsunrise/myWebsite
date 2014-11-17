@@ -1,0 +1,53 @@
+
+body {
+  height: 100%;
+  background-color:#ddddcc;
+}
+
+
+a, a:hover, a:visited, a:focus {
+    color: #933131;
+    text-decoration: none;
+}
+
+
+h1 {
+    font-family: 'Voltaire', sans-serif;
+    font-size: 48pt;
+}
+
+
+.pure-g > div {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.header {
+}
+
+#main {
+    position: relative;
+    top:-50px;
+}
+
+.home-content {
+    background-image: url("/DanCanoePhone.jpg");
+    background-color: #ddddcc;
+    background-position: top right;
+    background-repeat: no-repeat;
+    height: 100vh;
+    min-height: 100vh;
+    position: relative;    
+}
+
+
+.photoDiv {
+    text-align:center;
+    margin-top: 35px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+

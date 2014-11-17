@@ -1,0 +1,28 @@
+<div class="header">
+    <h1>Research</h1>
+</div>
+
+<div class="content">
+    <p>
+    During my Masters in Systems Design Engineering at the University of Waterloo, I worked on modeling and simulation of the golf swing.  The goal of my research was to investigate a variety of parameters involved in the design of golf clubs and determine their effects on the ability of the golfer to drive the ball as far as possible.  
+    </p>
+    <p>
+    The model consists of four stages.  The first stage is a biomechanical model of the golfer that incorporates the motion of the torso, arm, wrist, and hands of the golfer.  These are activated by torque generators that take into account muscle dynamics.  The second stage of the model is a flexible club, modeled using Rayleigh beam theory that is able to calculate the position of the clubhead throughout the swing incorporating the flexing and twisting motions.  
+    </p>    
+
+     <div class="pure-u-1-1 photoDiv">
+          <img class="pure-img-responsive" src="/img/GolferModel.png" alt="Golfer and Club Model">
+     </div>
+
+    <p>
+    Once the club is swung by the simulated golfer, the third stage of the model calculates the initial ball velocity and sping using a 3-D impulse-momentum approach.  Finally, an aerodynamic simulation is performed to calculate the carry or the distance that the ball was hit.  
+    </p>
+    <p>
+    To accommodate swinging different clubs, the entire model is subject to an optimization procedure that selects the best joint torque profiles for the muscles in the golfer portion of the model for a particular club.  Different club parameters can then be varied within the simulation and their effect measured.  
+    </p>
+
+    <p>
+    I presented an earlier stage of this research at the <a href="http://www.sciencedirect.com/science/article/pii/S1877705814006547">International Sports Engineering Association conference</a> in Sheffield England in Summer 2014.  The final version will be available as my thesis and will submitted to other journals.
+    </p>
+    
+</div>

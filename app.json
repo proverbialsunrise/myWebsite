@@ -1,0 +1,6 @@
+{
+  "name": "Dan's Website...Groovy",
+  "description": "Dan's Website, built using Tilo Mitra's Bedrock",
+  "repository": "https://github.com/proverbialsunrise/myWebsite",
+  "keywords": ["node", "express"]
+}
