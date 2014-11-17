@@ -102,15 +102,31 @@ app.use(router);
 
 // The exposeTemplates() method makes the Handlebars templates that are inside /shared/templates/
 // available to the client.
-router.get('/', [ middleware.exposeTemplates(), routes.render('home') ]);
+router.get('/', function (req, res) {
+    res.locals.title = "Dan Johnson";
+    res.render('home') 
+});
 
-router.get('/about', [ middleware.exposeTemplates(), routes.render('about') ]);
+router.get('/about', function (req, res) {
+    res.locals.title = "Dan Johnson | About";
+    res.render('about') 
+});
 
-router.get('/research', [ middleware.exposeTemplates(), routes.render('research') ]);
+router.get('/research', function (req, res) {
+    res.locals.title = "Dan Johnson | Research";
+    res.render('research') 
+});
 
-router.get('/projects', [ middleware.exposeTemplates(), routes.render('projects') ]);
 
-router.get('/contact', [ middleware.exposeTemplates(), routes.render('contact') ]);
+router.get('/projects', function (req, res) {
+    res.locals.title = "Dan Johnson | Projects";
+    res.render('projects') 
+});
+
+router.get('/contact', function (req, res) {
+    res.locals.title = "Dan Johnson | Contact";
+    res.render('contact') 
+});
 
 // A Route for Creating a 500 Error (Useful to keep around)
 router.get('/500', routes.render);
