@@ -23,8 +23,6 @@ h1 {
     box-sizing: border-box;
 }
 
-.header {
-}
 
 #main {
     position: relative;
@@ -38,7 +36,6 @@ h1 {
     background-repeat: no-repeat;
     height: 100vh;
     min-height: 100vh;
-    position: relative;    
 }
 
 
