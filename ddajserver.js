@@ -12,7 +12,7 @@ middleware   = require('./middleware'),
 config       = require('./config'),
 utils        = require('./lib/utils'),
 app          = express(),
-port         = (process.env.PORT || 8000),
+port         = (process.env.DDAJPORT || 8000),
 server       = app.listen(port, function () {
     console.log("Bedrock Server listening on port " + server.address().port);
 }),
