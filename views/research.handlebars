@@ -3,6 +3,10 @@
 </div>
 
 <div class="content">
+    <a name="3dgolf"></a>    
+    <div class="content-subhead">
+        <h2><a href="https://uwspace.uwaterloo.ca/handle/10012/9158">Three-Dimensional Biomechanical Model of the Golf Swing</a></h2>
+    </div>
     <p>
     During my Masters in Systems Design Engineering at the University of Waterloo, I worked on modeling and simulation of the golf swing.  The goal of my research was to investigate a variety of parameters involved in the design of golf clubs and determine their effects on the ability of the golfer to drive the ball as far as possible.  
     </p>
@@ -18,11 +22,29 @@
     Once the club is swung by the simulated golfer, the third stage of the model calculates the initial ball velocity and spin using a 3-D impulse-momentum approach.  Finally, an aerodynamic simulation is performed to calculate the carry or the distance that the ball was hit.  
     </p>
     <p>
-    To accommodate swinging different clubs, the entire model is subject to an optimization procedure that selects the best joint torque profiles for the muscles in the golfer portion of the model for a particular club.  Different club parameters can then be varied within the simulation and their effect measured.  
+    To accommodate swinging different clubs, the entire model is subject to an optimal control procedure that selects the best joint torque profiles for the muscles in the golfer portion of the model for a particular club.  Different club parameters can then be varied within the simulation and their effect measured.  
     </p>
 
     <p>
     I presented an earlier stage of this research at the <a href="http://www.sciencedirect.com/science/article/pii/S1877705814006547">International Sports Engineering Association conference</a> in Sheffield England in Summer 2014.  The final version is available <a href="https://uwspace.uwaterloo.ca/handle/10012/9158">as my thesis</a> and will submitted to other journals.
     </p>
+   
+    <a name="NSRRC"></a>
+    <div class="content-subhead">
+        <h2><a href="/pdfs/NSRRCPoster.pdf">NASA Sample Return Challenge 6 Degree of Freedom (DoF) SLaM</a></h2>
+    </div>
+    <p>
+        My fourth-year design project in Systems Design Engineering was the development of a Simultaneous Location and Mapping (SLaM) algorithm for the NASA Sample Return Robot Challenge.  The goal in this challenge is to simulate a mission to Mars or the moon during which a rover must begin at a starting location, autonomously explore its surroundings while collecting samples, and then return to the start location all without the use of GPS.  Our project group was responsible for developing a method for the robot to keep track of its position so that it can return to its start location. 
+    </p>
+    <p>
+        To work on this project, we developed a simulation environment for the NSRRC robot using ROS and Gazebo. This environment included the robot, rolling terrain and trees like we expected to see at the final competition. A sensor model was developed for Gazebo to simulate the Velodyne laser we planned to use on the robot. 
+    </p>
+     <div class="pure-u-1-1 photoDiv">
+          <img class="pure-img-responsive" src="/img/NSRRC.png" alt="NASA Sample Return Challenge Algorithm">
+     </div>
+    <p> 
+        The final solution we developed involved combining several algorithms (Kalman Filters, Iterative Closest Point, and GraphSLAM) to determine the robot's location and map its surroundings.  Using point cloud data from a Velodyne laser scanner, wheel and engine odometry information, we were able to improve on any one of these methods individually and provide real-time location information to the robot in simulation.
+    </p>
+
     
 </div>
