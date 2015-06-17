@@ -48,3 +48,6 @@ h1 {
 }
 
 
+.gradient {
+  background: radial-gradient(rgba(221, 221, 204, 1) 25%,  rgba(0, 0, 0, 0) 85%); /* Standard syntax */
+}
